@@ -62,7 +62,7 @@ export const Input = styled.input`
   padding-left: 15px;
   text-align: center;
 `
-export const Button = styled(Link)`
+export const Button = styled.button`
   width: 170px;
   height: 50px;
   border-radius: 20px;
@@ -74,14 +74,17 @@ export const Button = styled(Link)`
   font-weight: 700;
   padding: 5px;
   text-decoration: none;
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   &:hover {
     opacity: 0.7;
   }
   &:active {
     opacity: 0.5;
   }
+`
+export const LinkSubmit = styled(Link)`
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px;
+  text-decoration: none;
+  color: #000;
 `

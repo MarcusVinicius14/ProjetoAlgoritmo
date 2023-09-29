@@ -1,5 +1,4 @@
 import { styled } from 'styled-components'
-import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   position: fixed;
@@ -62,8 +61,8 @@ export const Input = styled.input`
   padding-left: 15px;
   text-align: center;
 `
-export const Button = styled(Link)`
-  width: 170px;
+export const Button = styled.button`
+  width: 300px;
   height: 50px;
   border-radius: 20px;
   border: none;
@@ -73,11 +72,6 @@ export const Button = styled(Link)`
   font-size: 16px;
   font-weight: 700;
   padding: 5px;
-  text-decoration: none;
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   &:hover {
     opacity: 0.7;
   }

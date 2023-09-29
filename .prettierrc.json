@@ -3,5 +3,10 @@
   "tabWidth": 2,
   "semi": false,
   "singleQuote": true,
-  "jsxSingleQuote": true
+  "jsxSingleQuote": true,
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "proseWrap": "always",
+  "embeddedLanguageFormatting":"auto"
 }
