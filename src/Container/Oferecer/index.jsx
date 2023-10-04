@@ -1,38 +1,40 @@
 import Lottie from "lottie-react";
-import ReceberAnimation from "../../assets/ReceberAnimation.json";
+import OferecerAnimation from "../../assets/OferecerAnimation.json";
 import * as C from "./styles";
 
-function Receber() {
+function Oferecer() {
   return (
     <C.ContainerAll>
       <C.Header>
         <C.Carry>CARRY</C.Carry>
         <C.ContainerButtons>
           <C.ButtonHeader to={"/home"}>Home</C.ButtonHeader>
-          <C.ButtonHeader isActive={true}>Receber</C.ButtonHeader>
-          <C.ButtonHeader to={"/oferecer"}>Oferecer</C.ButtonHeader>
+          <C.ButtonHeader to={"/receber"}>Receber</C.ButtonHeader>
+          <C.ButtonHeader isActive={true}>Oferecer</C.ButtonHeader>
         </C.ContainerButtons>
       </C.Header>
       <C.ContainerLogin>
         <C.ContainerItens>
-          <C.Title>Receber carona</C.Title>
+          <C.Title>Oferecer carona</C.Title>
           <C.ContainerLabel>
-            <C.Label>Local</C.Label>
-            <C.Input type="email" />
+            <C.Label>Percurso</C.Label>
+            <C.Input type="string" />
             <C.Label>Horario</C.Label>
             <C.Input type="time" />
+            <C.Label>Polo da instituição</C.Label>
+            <C.Input type="string" />
           </C.ContainerLabel>
           <C.Button>Submit</C.Button>
         </C.ContainerItens>
       </C.ContainerLogin>
       <C.ContainerLogo>
         <C.Carry>CARRY</C.Carry>
-        <C.Text>Quer receber carona?</C.Text>
+        <C.Text>Quer oferecer carona?</C.Text>
         <C.Text>
-          Recebendo carona voce ajuda o meio ambiente e pode beneficiar diversas
-          pessoas com isso.
+          Oferecendo carona voce recebe diversos beneficios como, desconto em
+          sua mensalidade, networking, alem de ajudar o meio ambiente.
         </C.Text>
-        <Lottie style={{ width: "400px" }} animationData={ReceberAnimation} />
+        <Lottie style={{ width: "400px" }} animationData={OferecerAnimation} />
       </C.ContainerLogo>
       <C.Footer>
         <C.TextFooter>
@@ -44,4 +46,4 @@ function Receber() {
   );
 }
 
-export default Receber;
+export default Oferecer;

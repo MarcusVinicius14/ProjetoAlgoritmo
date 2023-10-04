@@ -82,9 +82,9 @@ export const Cadastro = styled.p`
   font-weight: 400;
 `;
 export const LinkButton = styled(Link)`
-  cursor: pointer;
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
+  cursor: pointer;
   &:hover {
     opacity: 0.8;
   }

@@ -1,81 +1,142 @@
-import { styled } from 'styled-components'
+import { styled } from "styled-components";
+import { Link } from "react-router-dom";
 
-export const Container = styled.div`
-  position: fixed;
-  width: 100vw;
+export const ContainerAll = styled.div`
+  display: grid;
+  grid-template:
+    "header header" 80px
+    "DivOne DivTwo" 0.5fr
+    "footer footer" 40px;
   height: 100vh;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(243, 255, 88, 0.95) 70%,
-    rgba(223, 246, 27, 1) 100%
-  );
+`;
+export const ContainerLogin = styled.div`
+  grid-area: DivOne;
   display: flex;
   align-items: center;
   justify-content: center;
-`
+  width: 50vw;
+  height: calc(100vh - 120px);
+`;
+export const Header = styled.div`
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: #d9d9d9;
+`;
 export const ContainerItens = styled.div`
-  background: #ffffff;
-  padding: 50px;
-  width: 40vw;
-  border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+`;
+export const ContainerLabel = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 5px;
-  box-shadow: -24px 25px 17px 0px rgba(0, 0, 0, 0.1);
-`
-
-export const ContainerButton = styled.div`
-  margin-top: 40px;
+`;
+export const ContainerButtons = styled.div`
   display: flex;
   gap: 30px;
-`
-
-export const Title = styled.p`
-  font-size: 60px;
-  font-weight: 700;
-  margin-bottom: 40px;
-`
-export const Text = styled.p`
-  font-size: 22px;
+`;
+export const Footer = styled.div`
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: #000;
+`;
+export const TextFooter = styled.p`
+  font-size: 20px;
   font-weight: 400;
-  margin-bottom: 50px;
-`
+  color: #fff;
+`;
+export const FooterButton = styled(Link)`
+  color: #fff;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+`;
+export const ContainerLogo = styled.div`
+  grid-area: DivTwo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: calc(100vh - 120px);
+  background: #d9d9d9;
+  gap: 60px;
+`;
+export const Title = styled.h1`
+  font-size: 32px;
+  font-weight: 400;
+`;
+export const Carry = styled.h1`
+  font-size: 48px;
+  font-weight: 400;
+`;
 export const Label = styled.label`
-  font-size: 16px;
-  font-weight: 200;
-
-  a {
-    text-decoration: none;
-    color: #898d58;
-  }
-`
+  font-size: 20px;
+  font-weight: 400;
+`;
 export const Input = styled.input`
-  margin-bottom: 20px;
-  border: 1px solid #0f0f0f;
-  border-radius: 20px;
-  height: 40px;
-  width: 300px;
-  padding-left: 15px;
-  text-align: center;
-`
-export const Button = styled.button`
-  width: 300px;
-  height: 50px;
-  border-radius: 20px;
+  background: #d9d9d9;
+  border-radius: 25px;
   border: none;
+  width: 300px;
+  height: 35px;
+  padding-left: 9px;
+  margin-bottom: 20px;
+`;
+export const Button = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d9d9d9;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+  margin-top: 10px;
   cursor: pointer;
-  background: #d3d2d2;
-  box-shadow: -7px 9px 7px -4px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  font-weight: 700;
-  padding: 5px;
   &:hover {
-    opacity: 0.7;
+    opacity: 0.8;
   }
   &:active {
-    opacity: 0.5;
+    opacity: 0.6;
   }
-`
+`;
+export const ButtonHeader = styled(Link)`
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+  border: none;
+  border-bottom: ${(props) => (props.isActive ? "3px solid #000000" : "none")};
+  background: transparent;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+`;
+export const Text = styled.p`
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 80%;
+`;
