@@ -34,7 +34,9 @@ function Oferecer() {
           Oferecendo carona voce recebe diversos beneficios como, desconto em
           sua mensalidade, networking, alem de ajudar o meio ambiente.
         </C.Text>
-        <Lottie style={{ width: "400px" }} animationData={OferecerAnimation} />
+        <C.ContainerAnimation>
+          <Lottie animationData={OferecerAnimation} />
+        </C.ContainerAnimation>
       </C.ContainerLogo>
       <C.Footer>
         <C.TextFooter>

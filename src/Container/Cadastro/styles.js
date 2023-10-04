@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 
 export const ContainerAll = styled.div`
   display: flex;
+  @media (max-width: 850px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 export const ContainerLogin = styled.div`
   display: flex;
@@ -10,6 +16,10 @@ export const ContainerLogin = styled.div`
   justify-content: center;
   width: 50%;
   height: 100vh;
+  @media (max-width: 850px) {
+    height: 50%;
+    margin-bottom: 20px;
+  }
 `;
 export const ContainerItens = styled.div`
   display: flex;
@@ -33,6 +43,17 @@ export const ContainerLogo = styled.div`
   height: 100vh;
   background: #d9d9d9;
   gap: 60px;
+  @media (max-width: 850px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 100vw;
+    background: #fff;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
 `;
 export const Title = styled.h1`
   font-size: 32px;
@@ -80,6 +101,9 @@ export const Button = styled(Link)`
 export const Cadastro = styled.p`
   font-size: 18px;
   font-weight: 400;
+  @media (max-width: 850px) {
+    font-size: 16px;
+  }
 `;
 export const LinkButton = styled(Link)`
   cursor: pointer;
@@ -97,4 +121,12 @@ export const Text = styled.p`
   font-weight: 400;
   text-align: center;
   max-width: 80%;
+`;
+export const ContainerLottie = styled.div`
+  @media (max-width: 850px) {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;

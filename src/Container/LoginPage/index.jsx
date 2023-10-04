@@ -28,7 +28,9 @@ function LoginPage() {
           fornecer caronas gratuitas para diversos estudantes. Interessado? Crie
           sua conta.
         </C.Text>
+        <C.ContainerLottie>
         <Lottie style={{ width: "400px" }} animationData={loginPageAnimation} />
+        </C.ContainerLottie>
       </C.ContainerLogo>
     </C.ContainerAll>
   );

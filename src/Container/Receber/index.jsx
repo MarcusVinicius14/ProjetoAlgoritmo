@@ -32,7 +32,9 @@ function Receber() {
           Recebendo carona voce ajuda o meio ambiente e pode beneficiar diversas
           pessoas com isso.
         </C.Text>
-        <Lottie style={{ width: "400px" }} animationData={ReceberAnimation} />
+        <C.ContainerAnimation>
+        <Lottie animationData={ReceberAnimation} />
+        </C.ContainerAnimation>
       </C.ContainerLogo>
       <C.Footer>
         <C.TextFooter>

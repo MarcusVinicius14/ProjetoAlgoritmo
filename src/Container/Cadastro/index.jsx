@@ -30,10 +30,15 @@ function Cadastro() {
         <C.Carry>CARRY</C.Carry>
         <C.Text>procurando carona? De apenas um click</C.Text>
         <C.Text>
-          Cadastre-se para ganhar caronas gratuitas, descontos em sua
-          fatura alem de ajudar o meio anbiente.
+          Cadastre-se para ganhar caronas gratuitas, descontos em sua fatura
+          alem de ajudar o meio anbiente.
         </C.Text>
-        <Lottie style={{ width: "400px" }} animationData={loginPageAnimation} />
+        <C.ContainerLottie>
+          <Lottie
+            style={{ width: "400px" }}
+            animationData={loginPageAnimation}
+          />
+        </C.ContainerLottie>
       </C.ContainerLogo>
     </C.ContainerAll>
   );
