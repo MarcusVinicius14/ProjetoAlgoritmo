@@ -77,7 +77,7 @@ export const ContainerLogo = styled.div`
   width: 50vw;
   height: calc(100vh - 120px);
   background: #d9d9d9;
-  gap: 60px;
+  gap: 20px;
   @media (max-width: 850px) {
     display: flex;
     flex-direction: column;

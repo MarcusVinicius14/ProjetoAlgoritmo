@@ -18,10 +18,10 @@ function Home() {
       <C.DivObjetivo>
         <C.Title>Objectivo</C.Title>
         <C.Text>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Exercitationem, nam nulla! Ipsa aperiam debitis, veniam eum enim quam
-          tempora animi dolore at quibusdam voluptatem? Consequuntur inventore
-          quam rem assumenda fugiat.
+          Nosso objetivo é desenvolver um aplicativo onde seja viabilizada 
+          a carona
+          gratuitamente entre alunos da graduação, disponibilizando
+          desconto ou vale-gaolina para os motoristas pela boa ação.
         </C.Text>
       </C.DivObjetivo>
       <C.ContainerImageOne>
@@ -30,10 +30,9 @@ function Home() {
       <C.DivEco>
         <C.Title>Movimentos Eco</C.Title>
         <C.Text>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-          accusantium ducimus assumenda? Error quam in, soluta obcaecati neque
-          sunt porro ut illum? Nesciunt, quasi aliquid adipisci iusto nulla
-          obcaecati consequatur!
+          Carry é uma empresa com proposito ecologico que tem como meta atingir uma sociedade mais
+          ecologica limpa. Menos um carro na rua é menos liberação de gás carbonico 
+          impactanto positivamente a vida de todos.
         </C.Text>
       </C.DivEco>
       <C.ContainerImagetwo>
