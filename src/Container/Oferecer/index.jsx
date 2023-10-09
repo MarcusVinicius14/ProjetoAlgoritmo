@@ -31,8 +31,8 @@ function Oferecer() {
         <C.Carry>CARRY</C.Carry>
         <C.Text>Quer oferecer carona?</C.Text>
         <C.Text>
-          Oferecendo carona voce recebe diversos beneficios como, desconto em
-          sua mensalidade, networking, alem de ajudar o meio ambiente.
+          Oferecendo carona você recebe diversos benefícios como, desconto em
+          sua mensalidade, networking, além de ajudar o meio ambiente.
         </C.Text>
         <C.ContainerAnimation>
           <Lottie animationData={OferecerAnimation} />

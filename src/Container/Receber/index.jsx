@@ -29,11 +29,11 @@ function Receber() {
         <C.Carry>CARRY</C.Carry>
         <C.Text>Quer receber carona?</C.Text>
         <C.Text>
-          Recebendo carona voce ajuda o meio ambiente e pode beneficiar diversas
+          Recebendo carona você ajuda o meio ambiente e pode beneficiar diversas
           pessoas com isso.
         </C.Text>
         <C.ContainerAnimation>
-        <Lottie animationData={ReceberAnimation} />
+          <Lottie animationData={ReceberAnimation} />
         </C.ContainerAnimation>
       </C.ContainerLogo>
       <C.Footer>

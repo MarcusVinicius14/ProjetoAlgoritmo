@@ -31,7 +31,7 @@ function Cadastro() {
         <C.Text>procurando carona? De apenas um click</C.Text>
         <C.Text>
           Cadastre-se para ganhar caronas gratuitas, descontos em sua fatura
-          alem de ajudar o meio anbiente.
+          além de ajudar o meio ambiente.
         </C.Text>
         <C.ContainerLottie>
           <Lottie
